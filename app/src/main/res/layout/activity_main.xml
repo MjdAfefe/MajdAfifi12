@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="HELLO WORLD"
+        android:textColor="#0329FF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0101"
+        android:onClick="onClickGo"
+        android:text="press To Go"
+        android:textSize="34sp"
+        app:cornerRadius="30dp" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+</LinearLayout>
