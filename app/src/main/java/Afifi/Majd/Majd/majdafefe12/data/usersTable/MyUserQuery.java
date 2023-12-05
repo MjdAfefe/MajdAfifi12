@@ -11,6 +11,8 @@ public interface MyUserQuery
 {
     @Query("SELECT * FROM MyUser")
     List<MyUser> getAll();
+    @Query("SELECT * FROM MyUser WHERE email =:myEmail ")
+    MyUser checkEmail(String myEmail);
     @Query("SELECT * FROM MyUser WHERE email = :myEmail AND " +
             "passw = :myPassw LIMIT 1")
     MyUser checkEmailPassw(String myEmail, String myPassw);
