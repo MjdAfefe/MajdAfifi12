@@ -29,7 +29,7 @@ public abstract class AppDatabase extends RoomDatabase {
 
     {
 
-        db = Room.databaseBuilder(context, AppDatabase.class, "samihDataBase")
+        db = Room.databaseBuilder(context, AppDatabase.class, "majdDataBase")
                 .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();

@@ -8,31 +8,24 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvOutput"
-        android:layout_width="242dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="HELLO WORLD"
-        android:textColor="#0329FF"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="WELLCOM TO MY APP"
         android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/btnGo"
-        android:layout_width="292dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF0101"
-        android:onClick="onClickGo"
-        android:text="press To Go"
-        android:textSize="34sp"
-        app:cornerRadius="30dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        app:srcCompat="@android:drawable/ic_lock_idle_low_battery" />
 
-    <EditText
-        android:id="@+id/etInput"
-        android:layout_width="245dp"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-
+        android:gravity="center"
+        android:text="GO" />
 </LinearLayout>
