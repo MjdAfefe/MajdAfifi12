@@ -19,7 +19,19 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.options_munu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsltemSelected(Menultem item)
+{
+if (item.getltemld()==R.id.mnSettings)
+{
   }
-
+if ((item.getltemld()==R.id.mnLogout)
+    {
 }
+return true;
